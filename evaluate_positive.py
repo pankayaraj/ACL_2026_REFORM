@@ -24,16 +24,15 @@ parser.add_argument("--r", type=int, default=1024)
 parser.add_argument("--top_k", type=int, default=5)
 
 args = parser.parse_args()
-test_dataset_path =  "/cmlscratch/pan/GenARM_Inference/dataset/" + args.dataset + "/" + args.objective + "/test"
+test_dataset_path =  "test dataset path"
 test_dts = load_from_disk(test_dataset_path)
 
 dpo_model = "Mistral-7B-Instruct-v0.1"
-model_path =  "/cmlscratch/pan/GenARM_Inference/models/" + args.dataset + "/" + args.objective + "/" + dpo_model + "/dpo_" + str(args.base_epochs) + "/1/training model" 
+model_path =  "mode path" 
 
-print(model_path)
 
-reward_path = "/cmlscratch/pan/GenARM_Inference/models/" + args.dataset + "/" + "harmless" + "/" + args.model + "/" + str(args.reward_model_type) + "_" + str(args.reward_epochs) + "_r_" + str(args.r)  + "/1"    
-print(reward_path)
+
+reward_path = "reward path"    
 
 if args.reward_model_type == "trajectory_reward":
     config_reward = PeftConfig.from_pretrained(reward_path)
