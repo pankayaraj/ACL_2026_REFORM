@@ -21,3 +21,17 @@ For harmful failure mode
 ```
 python evaluate_positive.py
 ```
+
+# Citation
+
+```bibtex
+@misc{pathmanathan2026teachrewardmodelcorrect,
+      title={Teach a Reward Model to Correct Itself: Reward Guided Adversarial Failure Discovery for Robust Reward Modeling}, 
+      author={Pankayaraj Pathmanathan and Furong Huang},
+      year={2026},
+      eprint={2507.06419},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2507.06419}, 
+}
+```
